@@ -1,0 +1,8 @@
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        sonuc=0
+
+        for num in nums:
+            sonuc=num^sonuc
+
+        return sonuc
